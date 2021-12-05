@@ -1,23 +1,10 @@
 import discord
-from discord.ext import commands
-import requests
-import aiohttp
-import json
-from aiohttp import request
-from urllib.request import urlopen, Request
 from discord.ext import commands, tasks
-import hashlib
-import socket
 import datetime
-import pytz
-import os
-from discord_components import *
+import asyncio
 
 intents = discord.Intents.default()
 intents.members = True
-import asyncio
-import random
-from dateutil.parser import parse
 
 client = commands.Bot(command_prefix="!", case_insensitive=True)
 client.remove_command('help')
